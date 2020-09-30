@@ -2,7 +2,7 @@
 You need to pip install pipenv first 
 
 # Activate venv
-$ pipenv shell
+```$ pipenv shell```
 
 # Install dependencies
 ```pipenv install flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy ```
@@ -15,5 +15,5 @@ $ python
 >> exit()
 ```
 
-# Run Server (http://localhst:5000)
+# Run Server (http://localhost:5000)
 ```python app.py```
