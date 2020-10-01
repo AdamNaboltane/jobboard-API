@@ -60,14 +60,17 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     f_name=db.Column(db.String(255))
     l_name = db.Column(db.String(255))
+    password = db.Column(db.String(60))
     email = db.Column(db.String(255))
     phone = db.Column(db.String(255))
 
-    def __init__(self, f_name, l_name, email, phone):
+    def __init__(self, f_name, l_name, password, email, phone):
         self.f_name = f_name
         self.l_name = l_name
+        self.password = password
         self.email = email
         self.phone = phone
+        
 
 
 
